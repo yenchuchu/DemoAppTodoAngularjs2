@@ -1,0 +1,12 @@
+<h2 id="title-h2">todos</h2>
+<div *ngIf="hero" style="margin-left: 21%">
+  <h2>"{{hero.name}}" details!</h2>
+  <div >
+    <label>id: </label>{{hero.id}}</div>
+  <div id="wrap-detail">
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+  <button (click)="goBack()" id="button-back">Back</button>
+  <button (click)="save()" id="button-save">Save</button>
+</div>
